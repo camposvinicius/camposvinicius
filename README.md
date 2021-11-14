@@ -44,6 +44,9 @@
  
 </div>
 
+   ## See my new project - ETL on GCP:
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=camposvinicius&repo=gcp-etl)](https://github.com/camposvinicius/gcp-etl)
+  
   ## See my covid project:
   [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=camposvinicius&repo=vini-project-covid-data-BR)](https://github.com/camposvinicius/vini-project-covid-data-BR)
   
