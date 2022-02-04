@@ -44,7 +44,10 @@
  
 </div>
 
-   ## See my new project - ETL on GCP:
+   ## See my new project - ETL on AWS:
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=camposvinicius&repo=aws-etl)](https://github.com/camposvinicius/aws-etl)
+  
+   ## See my etl project on gcp - ETL on GCP:
   [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=camposvinicius&repo=gcp-etl)](https://github.com/camposvinicius/gcp-etl)
   
   ## See my covid project:
