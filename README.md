@@ -43,8 +43,11 @@
   ![Snake animation](https://github.com/camposvinicius/camposvinicius/blob/output/github-contribution-grid-snake.svg)
  
 </div>
-
-   ## See my new project - ETL on AWS:
+   
+  ## See my new project - ETL on Azure:
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=camposvinicius&repo=azure-etl)](https://github.com/camposvinicius/azure-etl)
+  
+   ## See my etl project on AWS - ETL on AWS:
   [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=camposvinicius&repo=aws-etl)](https://github.com/camposvinicius/aws-etl)
   
    ## See my etl project on gcp - ETL on GCP:
