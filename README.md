@@ -7,10 +7,11 @@
 
 <div align="center">
   <a href="https://github.com/camposvinicius">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=camposvinicius&show_icons=true&theme=react&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=camposvinicius&layout=compact&langs_count=7&theme=react"/>
+  <img height="180em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=camposvinicius&show_icons=true&theme=react&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=camposvinicius&layout=compact&langs_count=7&theme=react"/>
 </div>
 <div align="center">
+  <img align="center" alt="Vini-Snowflake" height="30" width="40" src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Logo.svg">
   <img align="center" alt="Vini-MySQL" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
   <img align="center" alt="Vini-PostgreSQL" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg">
   <img align="center" alt="Vini-SQLServer" height="50" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg">
