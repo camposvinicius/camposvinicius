@@ -46,17 +46,18 @@
 </div>
    
   ## See my new project - ETL on Azure:
-  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=camposvinicius&repo=azure-etl)](https://github.com/camposvinicius/azure-etl)
+  [![Readme Card](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=camposvinicius&repo=azure-etl)](https://github.com/camposvinicius/azure-etl)
   
    ## See my etl project on AWS - ETL on AWS:
-  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=camposvinicius&repo=aws-etl)](https://github.com/camposvinicius/aws-etl)
+  [![Readme Card](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=camposvinicius&repo=aws-etl)](https://github.com/camposvinicius/aws-etl)
   
    ## See my etl project on gcp - ETL on GCP:
-  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=camposvinicius&repo=gcp-etl)](https://github.com/camposvinicius/gcp-etl)
+  [![Readme Card](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=camposvinicius&repo=gcp-etl)](https://github.com/camposvinicius/gcp-etl)
   
   ## See my covid project:
-  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=camposvinicius&repo=vini-project-covid-data-BR)](https://github.com/camposvinicius/vini-project-covid-data-BR)
+  [![Readme Card](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=camposvinicius&repo=vini-project-covid-data-BR)](https://github.com/camposvinicius/vini-project-covid-data-BR)
   
  ## See my data engineer projects:
-  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=camposvinicius&repo=vini-dataengineer)](https://github.com/camposvinicius/vini-dataengineer)
+  [![Readme Card](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=camposvinicius&repo=vini-dataengineer)](https://github.com/camposvinicius/vini-dataengineer)
+
 
