@@ -45,8 +45,11 @@
  
 </div>
    
-  ## See my new project - ETL on Azure:
-  [![Readme Card](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=camposvinicius&repo=azure-etl)](https://github.com/camposvinicius/azure-etl)
+  ## See my new project - ETL on AWS - Snowflake:
+  [![Readme Card](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=camposvinicius&repo=aws-snowflake-etl)](https://github.com/camposvinicius/aws-snowflake-etl)
+  
+  ## See my etl project - ETL on Azure:
+  [![Readme Card](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=camposvinicius&repo=azure-etl)](https://github.com/camposvinicius/azure-etl)  
   
    ## See my etl project on AWS - ETL on AWS:
   [![Readme Card](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=camposvinicius&repo=aws-etl)](https://github.com/camposvinicius/aws-etl)
