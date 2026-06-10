@@ -23,7 +23,7 @@ I work at the intersection of **large-scale data platforms** and **applied AI sy
 
 - **AI systems:** LLM gateways, agents, tool calling, RAG, model serving, grounded generation, cost metering, request telemetry.
 - **Data engineering:** Spark, Snowflake, BigQuery, Databricks Iceberg, Delta Lake, CDC ingestion, orchestration, schema-as-code, lineage, governance.
-- **Platform engineering:** AWS, Azure, GCP, Terraform, CDK, containers, serverless, CI/CD, observability, reliability.
+- **Platform engineering:** AWS, Azure, GCP, Terraform / CDK / CloudFormation, containers, serverless, CI/CD, observability, reliability.
 
 ---
 
