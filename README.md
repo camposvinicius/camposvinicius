@@ -172,12 +172,9 @@ I work at the intersection of **large-scale data platforms** and **applied AI sy
 
 ## Featured Projects
 
-<p align="center">
-  Public repositories below are mostly <strong>data engineering</strong> projects. Public <strong>AI/LLM</strong> projects are coming next.
-</p>
-
 | Project | Focus | Stack |
 |---|---|---|
+| [rag-evals](https://github.com/camposvinicius/rag-evals) | CI-friendly RAG evaluation: retrieval metrics, LLM-as-judge faithfulness, and a regression gate that fails the build when quality drops. | Python · BM25 · AWS Bedrock · GitHub Actions |
 | [aws-snowflake-etl](https://github.com/camposvinicius/aws-snowflake-etl) | AWS to Snowflake data pipeline for analytics workloads. | Python · AWS · Snowflake · ETL |
 | [azure-etl](https://github.com/camposvinicius/azure-etl) | Azure ETL pipeline ingesting external API data for analytical processing. | Azure · Python · ETL · APIs |
 | [aws-etl](https://github.com/camposvinicius/aws-etl) | AWS ETL pipeline using open datasets and cloud storage patterns. | AWS · Python · S3 · ETL |
