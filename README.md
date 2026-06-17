@@ -1,9 +1,9 @@
 <h1 align="center">Vinícius Campos</h1>
 
-<h3 align="center">AI &amp; Data Platform Engineer</h3>
+<h3 align="center">AI & Data Platform Engineer</h3>
 
 <p align="center">
-  I build production platforms for <strong>LLM systems</strong>, <strong>data engineering</strong>, and <strong>cloud infrastructure</strong>.
+  I design and build production-grade AI and data platforms — from LLM gateways, RAG systems, agents, and observability to lakehouse pipelines, cloud infrastructure, and cost-aware operations.
 </p>
 
 <p align="center">
@@ -17,147 +17,194 @@
 
 ---
 
-## Focus
+## What I Build
 
-I work at the intersection of **large-scale data platforms** and **applied AI systems**: data lakes, lakehouses, orchestration, cloud infrastructure, LLM gateways, agents, RAG, model serving, observability, and cost-aware production operations.
+I work at the intersection of **applied AI systems**, **large-scale data platforms**, and **cloud-native infrastructure**.
 
-- **AI systems:** LLM gateways, agents, tool calling, RAG, model serving, grounded generation, cost metering, request telemetry.
-- **Data engineering:** Spark, Snowflake, BigQuery, Databricks Iceberg, Delta Lake, CDC ingestion, orchestration, schema-as-code, lineage, governance.
-- **Platform engineering:** AWS, Azure, GCP, Terraform / CDK / CloudFormation, containers, serverless, CI/CD, observability, reliability.
+* **LLM platforms:** multi-provider gateways, fallback routing, tool calling, agents, RAG, model serving, request telemetry, and token-level cost metering.
+* **AI reliability:** grounded generation, RAG evaluation, LLM-as-judge workflows, regression gates, observability, and cost attribution.
+* **Data platforms:** lakehouse architectures, batch and streaming pipelines, CDC ingestion, orchestration, schema-as-code, lineage, governance, and analytical workloads.
+* **Cloud platforms:** infrastructure as code, containers, serverless workloads, CI/CD, observability, reliability engineering, and production operations across AWS, Azure, and GCP.
 
 ---
 
-## AI &amp; LLM
+## AI Flagship Projects
+
+### [llm-gateway](https://github.com/camposvinicius/llm-gateway)
+
+<p>
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI">
+  <img src="https://img.shields.io/badge/Anthropic-191919?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic">
+  <img src="https://img.shields.io/badge/Gemini-4285F4?style=flat-square&logo=googlegemini&logoColor=white" alt="Gemini">
+  <img src="https://img.shields.io/badge/Amazon%20Bedrock-FF9900?style=flat-square&logo=amazonaws&logoColor=white" alt="Amazon Bedrock">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
+  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus">
+  <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana">
+</p>
+
+Production-style **multi-provider LLM gateway** designed for cost-aware and observable AI workloads.
+
+**Highlights**
+
+* Unified API for OpenAI, Gemini, Anthropic, and Amazon Bedrock
+* Fallback routing across providers
+* Token-level cost metering using integer micro-USD
+* Append-only usage ledger for auditability
+* Unified tool-calling interface
+* Metered web research agent
+* Prometheus metrics and Grafana dashboards
+* Designed around production concerns: observability, cost attribution, and reliability
+
+**Stack:** Python · FastAPI · OpenAI · Anthropic · Gemini · Amazon Bedrock · Prometheus · Grafana
+
+---
+
+### [rag-evals](https://github.com/camposvinicius/rag-evals)
+
+<p>
+  <img src="https://img.shields.io/badge/Anthropic-191919?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic">
+  <img src="https://img.shields.io/badge/Amazon%20Bedrock-FF9900?style=flat-square&logo=amazonaws&logoColor=white" alt="Amazon Bedrock">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
+</p>
+
+CI-friendly **RAG evaluation framework** focused on retrieval quality, faithfulness, and regression control.
+
+**Highlights**
+
+* Retrieval evaluation metrics
+* LLM-as-judge faithfulness checks
+* CI regression gate that fails the build when quality drops
+* Designed for repeatable RAG quality validation
+* Useful for preventing silent degradation in AI applications
+
+**Stack:** Python · BM25 · AWS Bedrock · GitHub Actions
+
+---
+
+## Current Focus
+
+* Building reliable **LLM gateways** for production AI workloads
+* Designing **RAG systems** with evaluation, grounded generation, and quality gates
+* Creating **cost-aware AI infrastructure** with telemetry, metering, and observability
+* Applying **platform engineering practices** to AI and data systems
+* Engineering **lakehouse platforms** with Spark, Iceberg, Delta Lake, Snowflake, and Databricks
+
+---
+
+## Core Stack
+
+### AI & LLM
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Claude-D97757?style=flat-square" alt="Claude">
-  <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square" alt="OpenAI">
-  <img src="https://img.shields.io/badge/Gemini-4285F4?style=flat-square" alt="Gemini">
-  <img src="https://img.shields.io/badge/Amazon%20Bedrock-FF9900?style=flat-square" alt="Amazon Bedrock">
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square" alt="LangChain">
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI">
+  <img src="https://img.shields.io/badge/Anthropic-191919?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic">
+  <img src="https://img.shields.io/badge/Gemini-4285F4?style=flat-square&logo=googlegemini&logoColor=white" alt="Gemini">
+  <img src="https://img.shields.io/badge/Amazon%20Bedrock-FF9900?style=flat-square&logo=amazonaws&logoColor=white" alt="Amazon Bedrock">
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain">
   <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square" alt="LangGraph">
-  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square" alt="Hugging Face">
+  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face">
   <img src="https://img.shields.io/badge/vLLM-111827?style=flat-square" alt="vLLM">
-  <img src="https://img.shields.io/badge/llama.cpp-111827?style=flat-square" alt="llama.cpp">
   <img src="https://img.shields.io/badge/FAISS-0467DF?style=flat-square" alt="FAISS">
-  <img src="https://img.shields.io/badge/OpenSearch-005EB8?style=flat-square" alt="OpenSearch">
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square" alt="PyTorch">
-  <img src="https://img.shields.io/badge/Ray-028CF0?style=flat-square" alt="Ray">
-  <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square" alt="MLflow">
-  <img src="https://img.shields.io/badge/Weights%20%26%20Biases-FFBE00?style=flat-square" alt="Weights and Biases">
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square" alt="FastAPI">
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square" alt="Streamlit">
-  <img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square" alt="Stripe">
+  <img src="https://img.shields.io/badge/OpenSearch-005EB8?style=flat-square&logo=opensearch&logoColor=white" alt="OpenSearch">
 </p>
 
 <p align="center">
-  LLM gateways · agents &amp; tool calling · RAG · model serving · prompt engineering · grounded generation · LLM observability · token-level cost metering
+  LLM gateways · agents · tool calling · RAG · model serving · grounded generation · LLM observability · cost metering
 </p>
 
----
-
-## Data Platforms
+### Data Platforms
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?style=flat-square" alt="Apache Spark">
-  <img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat-square" alt="PySpark">
-  <img src="https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square" alt="Snowflake">
+  <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="Apache Spark">
+  <img src="https://img.shields.io/badge/PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="PySpark">
+  <img src="https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&logo=snowflake&logoColor=white" alt="Snowflake">
+  <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white" alt="Databricks">
   <img src="https://img.shields.io/badge/Apache%20Iceberg-60A5FA?style=flat-square" alt="Apache Iceberg">
   <img src="https://img.shields.io/badge/Delta%20Lake-00ADD8?style=flat-square" alt="Delta Lake">
-  <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat-square" alt="Databricks">
-  <img src="https://img.shields.io/badge/Airflow-017CEE?style=flat-square" alt="Apache Airflow">
+  <img src="https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white" alt="Apache Airflow">
+  <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Apache Kafka">
   <img src="https://img.shields.io/badge/DataHub-53389E?style=flat-square" alt="DataHub">
-  <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square" alt="Apache Kafka">
-  <img src="https://img.shields.io/badge/Liquibase-2962FF?style=flat-square" alt="Liquibase">
-  <img src="https://img.shields.io/badge/AWS%20Glue-FF9900?style=flat-square" alt="AWS Glue">
-  <img src="https://img.shields.io/badge/Athena-FF9900?style=flat-square" alt="Athena">
-  <img src="https://img.shields.io/badge/EMR%20Serverless-FF9900?style=flat-square" alt="EMR Serverless">
-  <img src="https://img.shields.io/badge/Redshift-8C4FFF?style=flat-square" alt="Redshift">
-  <img src="https://img.shields.io/badge/DynamoDB-4053D6?style=flat-square" alt="DynamoDB">
-  <img src="https://img.shields.io/badge/BigQuery-669DF6?style=flat-square" alt="BigQuery">
-  <img src="https://img.shields.io/badge/Dataproc-4285F4?style=flat-square" alt="Dataproc">
-  <img src="https://img.shields.io/badge/Synapse-0078D4?style=flat-square" alt="Synapse">
-  <img src="https://img.shields.io/badge/Data%20Factory-0078D4?style=flat-square" alt="Azure Data Factory">
-  <img src="https://img.shields.io/badge/HDInsight-0078D4?style=flat-square" alt="HDInsight">
+  <img src="https://img.shields.io/badge/BigQuery-669DF6?style=flat-square&logo=googlebigquery&logoColor=white" alt="BigQuery">
 </p>
 
 <p align="center">
-  Lakehouse architecture · medallion pipelines · CDC ingestion · schema-as-code · catalog &amp; lineage · PII masking · multi-cloud migrations
+  Lakehouse architecture · medallion pipelines · CDC ingestion · orchestration · catalog & lineage · PII masking · multi-cloud migrations
 </p>
 
----
-
-## Cloud &amp; Platform
+### Cloud & Platform Engineering
 
 <p align="center">
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square" alt="AWS">
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS">
   <img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square" alt="Azure">
-  <img src="https://img.shields.io/badge/GCP-4285F4?style=flat-square" alt="GCP">
-  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square" alt="Terraform">
-  <img src="https://img.shields.io/badge/AWS%20CDK-FF9900?style=flat-square" alt="AWS CDK">
-  <img src="https://img.shields.io/badge/CloudFormation-FF4F8B?style=flat-square" alt="CloudFormation">
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square" alt="Docker">
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square" alt="Kubernetes">
-  <img src="https://img.shields.io/badge/ECS-FF9900?style=flat-square" alt="Amazon ECS">
-  <img src="https://img.shields.io/badge/EKS-FF9900?style=flat-square" alt="Amazon EKS">
-  <img src="https://img.shields.io/badge/Lambda-FF9900?style=flat-square" alt="AWS Lambda">
-  <img src="https://img.shields.io/badge/Step%20Functions-FF9900?style=flat-square" alt="Step Functions">
-  <img src="https://img.shields.io/badge/SQS%20%2F%20SNS-FF9900?style=flat-square" alt="SQS and SNS">
-  <img src="https://img.shields.io/badge/API%20Gateway-FF4F8B?style=flat-square" alt="API Gateway">
-  <img src="https://img.shields.io/badge/CloudFront-8C4FFF?style=flat-square" alt="CloudFront">
-  <img src="https://img.shields.io/badge/WAF-8C4FFF?style=flat-square" alt="AWS WAF">
-  <img src="https://img.shields.io/badge/DMS-FF9900?style=flat-square" alt="AWS DMS">
-  <img src="https://img.shields.io/badge/LocalStack-1D3557?style=flat-square" alt="LocalStack">
+  <img src="https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white" alt="GCP">
+  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform">
+  <img src="https://img.shields.io/badge/AWS%20CDK-FF9900?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS CDK">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes">
+  <img src="https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white" alt="AWS Lambda">
+  <img src="https://img.shields.io/badge/EKS-FF9900?style=flat-square&logo=amazoneks&logoColor=white" alt="Amazon EKS">
+  <img src="https://img.shields.io/badge/ECS-FF9900?style=flat-square&logo=amazonecs&logoColor=white" alt="Amazon ECS">
 </p>
 
 <p align="center">
-  Containers · serverless · event-driven architectures · OIDC CI/CD · infrastructure as code · production operations
+  Infrastructure as code · containers · serverless · event-driven systems · OIDC CI/CD · production operations
 </p>
 
----
-
-## DevOps, Databases &amp; Observability
+### DevOps, Databases & Observability
 
 <p align="center">
-  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square" alt="GitHub Actions">
-  <img src="https://img.shields.io/badge/GitLab%20CI-FC6D26?style=flat-square" alt="GitLab CI">
-  <img src="https://img.shields.io/badge/Bitbucket%20Pipelines-0052CC?style=flat-square" alt="Bitbucket Pipelines">
-  <img src="https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square" alt="ArgoCD">
-  <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square" alt="Jenkins">
-  <img src="https://img.shields.io/badge/UrbanCode-052FAD?style=flat-square" alt="UrbanCode">
-  <img src="https://img.shields.io/badge/SonarCloud-F3702A?style=flat-square" alt="SonarCloud">
-  <img src="https://img.shields.io/badge/Snyk-4C4A73?style=flat-square" alt="Snyk">
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square" alt="PostgreSQL">
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square" alt="MySQL">
-  <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square" alt="SQL Server">
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square" alt="MongoDB">
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square" alt="Redis">
-  <img src="https://img.shields.io/badge/Aurora-FF9900?style=flat-square" alt="Amazon Aurora">
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square" alt="Firebase">
-  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square" alt="Prometheus">
-  <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square" alt="Grafana">
-  <img src="https://img.shields.io/badge/CloudWatch-FF4F8B?style=flat-square" alt="CloudWatch">
-  <img src="https://img.shields.io/badge/X--Ray-FF9900?style=flat-square" alt="AWS X-Ray">
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
+  <img src="https://img.shields.io/badge/GitLab%20CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white" alt="GitLab CI">
+  <img src="https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white" alt="ArgoCD">
+  <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white" alt="Jenkins">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB">
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis">
+  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus">
+  <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana">
+  <img src="https://img.shields.io/badge/CloudWatch-FF4F8B?style=flat-square&logo=amazoncloudwatch&logoColor=white" alt="CloudWatch">
 </p>
 
 <p align="center">
-  CI/CD quality gates · alarms &amp; dashboards · DLQ/quarantine flows · request tracing · cost attribution · production runbooks
+  CI/CD quality gates · alarms & dashboards · request tracing · cost attribution · DLQ/quarantine flows · production runbooks
 </p>
 
----
-
-## Programming
+### Programming
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square" alt="Python">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/SQL-336791?style=flat-square" alt="SQL">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square" alt="TypeScript">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square" alt="JavaScript">
-  <img src="https://img.shields.io/badge/HCL-7B42BC?style=flat-square" alt="HCL">
-  <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square" alt="Bash">
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square" alt="Jupyter">
-  <img src="https://img.shields.io/badge/Zeppelin-2C2255?style=flat-square" alt="Apache Zeppelin">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/HCL-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="HCL">
+  <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white" alt="Bash">
 </p>
+
+---
+
+## Engineering Principles
+
+* **Production-first design:** systems should be observable, testable, deployable, and operable.
+* **Cost awareness by default:** especially for LLM workloads, cloud compute, storage, and data movement.
+* **Reliability over demos:** fallback paths, retries, dashboards, alerts, and runbooks matter.
+* **Evaluation-driven AI:** retrieval quality, faithfulness, grounded generation, and regression gates should be part of the workflow.
+* **Data quality and governance:** schemas, lineage, masking, validation, and ownership should be part of the platform.
+* **Automation and repeatability:** infrastructure, pipelines, and deployments should be reproducible through code.
+
+---
+
+## Data Platform Projects
+
+| Project                                                                                    | Focus                                                                                                                                | Stack                                    |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------- |
+| [aws-snowflake-etl](https://github.com/camposvinicius/aws-snowflake-etl)                   | AWS-to-Snowflake data pipeline for analytical workloads, focused on cloud ingestion, transformation, and data warehouse integration. | Python · AWS · Snowflake · ETL           |
+| [azure-etl](https://github.com/camposvinicius/azure-etl)                                   | Azure ETL pipeline ingesting external API data for analytical processing.                                                            | Azure · Python · ETL · APIs              |
+| [aws-etl](https://github.com/camposvinicius/aws-etl)                                       | AWS ETL pipeline using open datasets and cloud storage patterns.                                                                     | AWS · Python · S3 · ETL                  |
+| [gcp-etl](https://github.com/camposvinicius/gcp-etl)                                       | GCP ETL pipeline built around public data ingestion and processing.                                                                  | GCP · Python · ETL · BigQuery            |
+| [vini-dataengineer](https://github.com/camposvinicius/vini-dataengineer)                   | Data engineering study projects across core pipeline patterns.                                                                       | Jupyter · Spark · SQL · Data Engineering |
+| [vini-project-covid-data-BR](https://github.com/camposvinicius/vini-project-covid-data-BR) | Brazilian COVID data pipeline and analytics project.                                                                                 | Spark · Kafka · Jupyter · Analytics      |
 
 ---
 
@@ -170,17 +217,13 @@ I work at the intersection of **large-scale data platforms** and **applied AI sy
 
 ---
 
-## Featured Projects
+## Let's Connect
 
-| Project | Focus | Stack |
-|---|---|---|
-| [llm-gateway](https://github.com/camposvinicius/llm-gateway) | Multi-provider LLM gateway: fallback routing, per-token cost metering in integer micro-USD, an append-only usage ledger, unified tool-calling, a metered web research agent, and Prometheus + Grafana observability. | Python · FastAPI · OpenAI / Gemini / Anthropic / Bedrock · Prometheus / Grafana |
-| [rag-evals](https://github.com/camposvinicius/rag-evals) | CI-friendly RAG evaluation: retrieval metrics, LLM-as-judge faithfulness, and a regression gate that fails the build when quality drops. | Python · BM25 · AWS Bedrock · GitHub Actions |
-| [aws-snowflake-etl](https://github.com/camposvinicius/aws-snowflake-etl) | AWS to Snowflake data pipeline for analytics workloads. | Python · AWS · Snowflake · ETL |
-| [azure-etl](https://github.com/camposvinicius/azure-etl) | Azure ETL pipeline ingesting external API data for analytical processing. | Azure · Python · ETL · APIs |
-| [aws-etl](https://github.com/camposvinicius/aws-etl) | AWS ETL pipeline using open datasets and cloud storage patterns. | AWS · Python · S3 · ETL |
-| [gcp-etl](https://github.com/camposvinicius/gcp-etl) | GCP ETL pipeline built around public data ingestion and processing. | GCP · Python · ETL · BigQuery |
-| [vini-dataengineer](https://github.com/camposvinicius/vini-dataengineer) | Data engineering study projects across core pipeline patterns. | Jupyter · Spark · SQL · Data Engineering |
-| [vini-project-covid-data-BR](https://github.com/camposvinicius/vini-project-covid-data-BR) | Brazilian COVID data pipeline and analytics project. | Spark · Kafka · Jupyter · Analytics |
-
----
+<p align="center">
+  <a href="https://www.linkedin.com/in/vinicius-de-paula-monteiro-de-campos-128aa8189/" target="_blank">
+    <img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn">
+  </a>
+  <a href="mailto:viniciusdipaulla@icloud.com">
+    <img src="https://img.shields.io/badge/Send%20Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Send Email">
+  </a>
+</p>
