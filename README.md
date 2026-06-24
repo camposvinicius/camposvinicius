@@ -3,7 +3,7 @@
 <h3 align="center">AI & Data Platform Engineer</h3>
 
 <p align="center">
-  I design and build production-grade AI and data platforms — from LLM gateways, RAG systems, agents, and observability to lakehouse pipelines, cloud infrastructure, and cost-aware operations.
+  I design and build production-grade AI and data platforms, from LLM gateways, RAG systems, agents, and observability to lakehouse pipelines, cloud infrastructure, and cost-aware operations.
 </p>
 
 <p align="center">
@@ -22,13 +22,37 @@
 I work at the intersection of **applied AI systems**, **large-scale data platforms**, and **cloud-native infrastructure**.
 
 * **LLM platforms:** multi-provider gateways, fallback routing, tool calling, agents, RAG, model serving, request telemetry, and token-level cost metering.
-* **AI reliability:** grounded generation, RAG evaluation, LLM-as-judge workflows, regression gates, observability, and cost attribution.
+* **AI reliability:** agent reliability harnesses, grounded generation, RAG evaluation, LLM-as-judge workflows, regression gates in CI, MCP tooling, observability, and cost attribution.
 * **Data platforms:** lakehouse architectures, batch and streaming pipelines, CDC ingestion, orchestration, schema-as-code, lineage, governance, and analytical workloads.
 * **Cloud platforms:** infrastructure as code, containers, serverless workloads, CI/CD, observability, reliability engineering, and production operations across AWS, Azure, and GCP.
 
 ---
 
 ## AI Flagship Projects
+
+### [agent-evals](https://github.com/camposvinicius/agent-evals)
+
+<p>
+  <img src="https://img.shields.io/badge/Anthropic-191919?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic">
+  <img src="https://img.shields.io/badge/Amazon%20Bedrock-FF9900?style=flat-square&logo=amazonaws&logoColor=white" alt="Amazon Bedrock">
+  <img src="https://img.shields.io/badge/MCP-1C1C1C?style=flat-square" alt="MCP">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
+</p>
+
+Reliability harness for **tool-calling agents**. It runs a real agent against frontier models and measures whether it stays grounded, refuses when it should, and avoids hallucinating, with cost and latency.
+
+**Highlights**
+
+* Production-shaped tool-calling agent (bounded loop, per-tool timeouts, citation-enforced grounding, explicit refusal and clarify)
+* Tools served natively over **MCP**, the Model Context Protocol
+* Live multi-model comparison across Claude Opus 4.8, Opus 4.7, Sonnet 4.6, and Haiku 4.5 on AWS Bedrock, with real cost and latency
+* Outcome and trajectory metrics (grounding, hallucination, refusal, tool accuracy) gated in CI
+* Surfaces where smaller models break, for example Haiku's hallucination rate jumps on ambiguous queries while the larger models hold
+
+**Stack:** Python · Anthropic · AWS Bedrock · MCP · GitHub Actions
+
+---
 
 ### [llm-gateway](https://github.com/camposvinicius/llm-gateway)
 
@@ -195,7 +219,7 @@ CI-friendly **RAG evaluation framework** focused on retrieval quality, faithfuln
 
 ---
 
-## Data Platform Projects
+## Data Engineering and Platform Projects
 
 | Project                                                                                    | Focus                                                                                                                                | Stack                                    |
 | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------- |
